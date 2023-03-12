@@ -8,19 +8,6 @@
     </head>
 
     <body>
-
-        <!-- Java Script*-->
-        <script type="text/javascript">
-            var name = "Yuzhu";
-            var month= "March";
-            var message= " Welcome! My name is "+ name + ".\n \n Here are the books I recommend for "+ month + ". Enjoy!";
-            console.log(message);
-            alert(message);
-
-        </script>
-
-
-
         <!-- Navigation Bar*-->
         <nav>
             <ul class="topnav">
@@ -53,9 +40,21 @@
         class="borderImg">
 
         <br>
+        <br>
 
         <!-- Button*-->
         <ul>
+            <!-- Java Script*-->
+            <li><p id="demo"><button>!! Click me !!</button></p></li>
+        
+            <script>
+            document.getElementById("demo").onclick = function() {myFunction()};
+
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Have a great day!";
+            }
+            </script>
+            <br>
             <li><a href="https://en.wikipedia.org/wiki/The_Little_Prince"><button>Introduction</button></a></li>
             <br>
             <ol>
@@ -82,15 +81,15 @@
                 cellspacing="2">
 
                 <tr>
-                    <td><button>The Little Prince</button></td>
-                    <td><button>The Rose</button></td>
-                    <td><button>The Fox</button></td>
+                    <td>The Little Prince</td>
+                    <td>The Rose</td>
+                    <td>The Fox</td>
                 </tr>
 
                 <tr>
-                    <td><button>The Snake</button></td>
-                    <td><button>The King</button></td>
-                    <td><button>The Baobabs</button></td>
+                    <td>The Snake</td>
+                    <td>The King</td>
+                    <td>The Baobabs</td>
                 </tr>
 
             </table>
@@ -143,15 +142,15 @@
                 cellspacing="2">
 
                 <tr>
-                    <td><button>Macbeth</button></td>
-                    <td><button>Lady Macbeth</button></td>
-                    <td><button>The Three Witches</button></td>
+                    <td>Macbeth</td>
+                    <td>Lady Macbeth</td>
+                    <td>The Three Witches</td>
                 </tr>
 
                 <tr>
-                    <td><button>Banquo</button></td>
-                    <td><button>King Duncan</button></td>
-                    <td><button>Macduff</button></td>
+                    <td>Banquo</td>
+                    <td>King Duncan</td>
+                    <td>Macduff</td>
                 </tr>
             </table>
             <br>
